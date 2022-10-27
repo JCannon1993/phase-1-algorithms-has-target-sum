@@ -1,5 +1,17 @@
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+  for (let i=0; i<array.length; i++){
+    let comp = target - array[i]
+    console.log('numbers array iteration : ',array[i])
+    console.log("difference from target and array number : ", comp)
+    for (let j=i+1; j<array.length; j++){
+      console.log('number being compared to first iteraion : ', array[j])
+      if (array[j] === comp){
+        
+        return true
+      }
+    }
+  }
+  return false
 }
 
 /* 
